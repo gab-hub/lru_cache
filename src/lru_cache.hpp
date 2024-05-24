@@ -1,6 +1,9 @@
 #ifndef LRU_CACHE_HPP
 #define LRU_CACHE_HPP
 
+#include "lru_cache.hpp"
+#include <iostream>
+#include <algorithm>
 #include <unordered_set>
 #include <vector>
 
@@ -62,13 +65,7 @@ private:
 April 18, 2024
 This program creates an LRU cache */
 
-#include "lru_cache.hpp"
-#include <iostream>
-#include <algorithm>
 
-/* 
-https://www.codeproject.com/Articles/48575/How-to-Define-a-Template-Class-in-a-h-File-and-Imp
-*/
 
 /* Places item in cache and checks for other important conditions */
 template <class T>
